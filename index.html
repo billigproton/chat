@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <html lang="cz">
+    <meta charset="UTF-8 s BOM">
+    <meta name="viewport"a content="width=device-width, initial-scale=1">
+    <title>Chat4Fun</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="code.js"></script>
+
+</head>
+<body>
+
+<h1>Chat4Fun</h1>
+<div class="container">
+      <div class="typed-out">Chat and have fun :-)</div>
+    </div>
+<hr>
+<form name="chat">    
+<div id="persons">
+<div id="leftperson">
+
+<img class="person" src="img/person1.jpeg" width="20%"> <br>
+<input type="text" id="zprava1" placeholder="Napište zprávu..."> <br><br>
+<input type="button" value="Odeslat" onclick="zaznam1()"> <br><br><br> <!-- doplnit funkci zaznam1() -->
+<textarea cols="20" rows="10" readonly></textarea> <!-- u textarea budu muset nejspíš přidat id -->
+
+</div>
+<div id="rightperson">
+
+<img class="person" src="img/person2.jpeg" width="20%"> <br>
+<input type="text" id="zprava2" placeholder="Napište zprávu..."> <br><br>
+<input type="button" value="Odeslat" onclick="zaznam2()"> <br><br><br> <!-- doplnit funkci zaznam2() -->
+<textarea cols="20" rows="10" readonly></textarea> <!-- u textarea budu muset nejspíš přidat id -->
+
+</div>
+</div>
+</form>
+</body>

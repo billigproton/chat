@@ -1,0 +1,69 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+
+body {
+  text-align: center;
+  background-image: url(img/background.jpeg);
+}
+
+h1 {
+  font-family: "Titillium Web";
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 20%;
+}
+
+hr {
+  background-color: orange;
+  height: 2px;
+  border: none;
+  width: 70%;
+}
+
+#persons {
+}
+
+#leftperson {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20%;
+}
+
+#rightperson {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.typed-out {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  font-size: 1.6rem;
+  width: 0;
+}
+
+.container {
+  display: inline-block;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink { 
+  from { border-color: transparent }
+  to { border-color: orange; }
+}
+
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation: 
+      typing 1s steps(20, end) forwards,
+      blink .8s infinite;
+}
