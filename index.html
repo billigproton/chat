@@ -12,31 +12,34 @@
 <body>
 
     <h1>Chat4Fun</h1>
-    <div class="container">
-        <div class="typed-out">Chat and have fun :-)</div>
-    </div>
-    <hr>
-    <form name="chat">
-        <div id="persons">
-            <div id="leftperson">
-
-                <img class="person" src="img/person1.jpeg" width="20%"> <br>
-                <input type="text" id="zprava1" placeholder="Napište zprávu..."> <br><br>
-                <input id="btnChat1" type="button" value="Odeslat"> <br><br><br> 
-                <textarea id="chat1" cols="20" rows="10" readonly></textarea> 
-
-            </div>
-            <div id="rightperson">
-
-                <img class="person" src="img/person2.jpeg" width="20%"> <br>
-                <input type="text" id="zprava2" placeholder="Napište zprávu..."> <br><br>
-                <input id="btnChat2" type="button" value="Odeslat"> <br><br><br> 
-                <textarea id="chat2" cols="20" rows="10" readonly></textarea> 
-
-            </div>
-            
+    <div id="content">
+        <div class="container">
+            <div class="typed-out">Chat and have fun :-)</div>
         </div>
-    </form>
+        <hr>
+        <form name="chat" id="form">
+            <div id="persons">
+                <div id="leftperson">
+
+                    <img class="person" src="img/person1.jpeg" width="20%"> <br>
+                    <input type="text" id="zprava1" placeholder="Napište zprávu..."> <br><br>
+                    <input id="btnChat1" type="button" value="Odeslat"> <br><br><br>
+                    <textarea id="chat1" cols="20" rows="10" readonly></textarea>
+
+                </div>
+                <div id="rightperson">
+
+                    <img class="person" src="img/person2.jpeg" width="20%"> <br>
+                    <input type="text" id="zprava2" placeholder="Napište zprávu..."> <br><br>
+                    <input id="btnChat2" type="button" value="Odeslat"> <br><br><br>
+                    <textarea id="chat2" cols="20" rows="10" readonly></textarea>
+
+                </div>
+
+            </div>
+            <input type="reset" id="btnRefresh">
+        </form>
+    </div>
 
     <script src="code.js"></script>
 </body>

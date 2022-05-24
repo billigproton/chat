@@ -20,3 +20,8 @@ btnChat2.addEventListener("click", function() {
     zpravy2 += "Bob: " + zprava2.value + "\n";
     chat1.textContent = zpravy2;
 });
+
+btnRefresh.addEventListener("click", function() {
+    
+        window.location.reload()
+});
