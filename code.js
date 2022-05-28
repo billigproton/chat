@@ -23,5 +23,16 @@ btnChat2.addEventListener("click", function() {
 
 btnRefresh.addEventListener("click", function() {
     
-        window.location.reload()
+        window.location.reload();
 });
+
+person1_img.addEventListener("click", function() {
+
+    alert("Jméno: Alice");
+});
+
+person2_img.addEventListener("click", function() {
+
+    alert("Jméno: Bob");
+});
+
