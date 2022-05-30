@@ -17,28 +17,18 @@ answer2Element.innerText = uzivatel_2;
 const chat2 = document.querySelector('#chat2');
 const chat1 = document.querySelector('#chat1');
 
-btnChat1.addEventListener("click", function() {
-    zpravy1 += "Uživatel 1: " + zprava1.value + "\n"; 
+btnChat1.addEventListener("click", function () {
+    zpravy1 += "Uživatel 1: " + zprava1.value + "\n";
     chat2.textContent = zpravy1;
-    
+
 });
 
-btnChat2.addEventListener("click", function() {
+btnChat2.addEventListener("click", function () {
     zpravy2 += "Uživatel 2: " + zprava2.value + "\n";
     chat1.textContent = zpravy2;
 });
 
-btnRefresh.addEventListener("click", function() {
-    
-        window.location.reload();
-});
+btnRefresh.addEventListener("click", function () {
 
-person1_img.addEventListener("click", function() {
-
-    alert("Jméno: Alice");
-});
-
-person2_img.addEventListener("click", function() {
-
-    alert("Jméno: Bob");
+    window.location.reload();
 });

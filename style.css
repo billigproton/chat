@@ -22,7 +22,12 @@ hr {
   width: 70%;
 }
 
-#Jmeno1, #Jmeno2 {
+textarea {
+  background-color: rgb(255, 154, 60, 0.9);
+}
+
+#Jmeno1,
+#Jmeno2 {
   font-weight: bold;
   font-family: Helvetica;
 }
@@ -50,22 +55,50 @@ hr {
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
 }
 
-@keyframes blink { 
-  from { border-color: transparent }
-  to { border-color: orange; }
+@keyframes blink {
+  from {
+    border-color: transparent
+  }
+
+  to {
+    border-color: orange;
+  }
 }
 
-.typed-out{
-    overflow: hidden;
-    border-right: .15em solid orange;
-    white-space: nowrap;
-    font-size: 1.6rem;
-    width: 0;
-    animation: 
-      typing 1s steps(20, end) forwards,
-      blink .8s infinite;
+.typed-out {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  font-size: 1.6rem;
+  width: 0;
+  animation:
+    typing 1s steps(20, end) forwards,
+    blink .8s infinite;
+}
+
+#btnChat1,
+#btnChat2,
+#btnRefresh {
+  color: #000;
+  background-color: rgb(255, 154, 60);
+  ;
+  border: 1px solid #666;
+  border-radius: 5px;
+  padding: 5px 30px;
+
+}
+
+#btnChat1:hover,
+#btnChat2:hover,
+#btnRefresh:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
