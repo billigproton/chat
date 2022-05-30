@@ -22,7 +22,9 @@ hr {
   width: 70%;
 }
 
-#persons {
+#Jmeno1, #Jmeno2 {
+  font-weight: bold;
+  font-family: Helvetica;
 }
 
 #leftperson {
